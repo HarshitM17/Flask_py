@@ -27,7 +27,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#photographs">Photographs</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#certificates">Certificates</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
                     </ul>
@@ -38,7 +38,7 @@
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
+                <img class="masthead-avatar mb-5" src="{{ url_for('static', filename='Harshit.png.jpeg') }}" alt="..." />
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0">Harshit Mathur</h1>
                 <!-- Icon Divider-->
@@ -51,71 +51,44 @@
                 <p class="masthead-subheading font-weight-light mb-0">Backend Developer - Good Communication skills - Languages known(Python,c/c++)</p>
             </div>
         </header>
-        <!-- Photographs Section-->
-        <section class="page-section Photographs" id="Photographs">
+        <!-- Certificates Section-->
+        <section class="page-section Certificates" id="Certificates">
             <div class="container">
-                <!-- Photographs Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Photographs</h2>
+                <!-- Certificates Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Certificates</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- Photographs Grid Items-->
+                <!-- Certificates Grid Items-->
                 <div class="row justify-content-center">
-                    <!-- Photographs Item 1-->
+                    <!-- Certificates Item 1-->
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="photographs-item mx-auto" data-bs-toggle="modal" data-bs-target="#photographsModal1">
-                            <div class="photographs-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="photographs-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        <div class="certificates-item mx-auto" data-bs-toggle="modal" data-bs-target="#certificatesModal1">
+                            <div class="certificates-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="certificates-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/photographs/cabin.png" alt="..." />
+                            <img class="img-fluid" src="{{ url_for('static', filename='p_certificate.png.jpeg') }}" alt="..." />
                         </div>
                     </div>
-                    <!-- Photographs Item 2-->
+                    <!-- Certificates Item 2-->
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="photographs-item mx-auto" data-bs-toggle="modal" data-bs-target="#photographsModal2">
-                            <div class="photographs-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="photographs-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        <div class="certificates-item mx-auto" data-bs-toggle="modal" data-bs-target="#certificatesModal2">
+                            <div class="certificates-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="certificates-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/photographs/cake.png" alt="..." />
+                            <img class="img-fluid" src="{{ url_for('static', filename='uprevol_lor.png.jpeg') }}" alt="..." />
                         </div>
                     </div>
-                    <!-- Photographs Item 3-->
+                    <!-- Certificates Item 3-->
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="photographs-item mx-auto" data-bs-toggle="modal" data-bs-target="#photographsModal3">
-                            <div class="photographs-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="photographs-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        <div class="certificates-item mx-auto" data-bs-toggle="modal" data-bs-target="#certificatesModal3">
+                            <div class="certificates-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="certificates-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/photographs/circus.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Photographs Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="photographs-item mx-auto" data-bs-toggle="modal" data-bs-target="#photographsModal4">
-                            <div class="photographs-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="photographs-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/photographs/game.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Photographs Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div class="photographs-item mx-auto" data-bs-toggle="modal" data-bs-target="#photographsModal5">
-                            <div class="photographs-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="photographs-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/photographs/safe.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Photographs Item 6-->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="photographs-item mx-auto" data-bs-toggle="modal" data-bs-target="#photographsModal6">
-                            <div class="photographs-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="photographs-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/photographs/submarine.png" alt="..." />
+                            <img class="img-fluid" src="{{ url_for('static', filename='c_certificate.png.jpeg') }}" alt="..." />
                         </div>
                     </div>
                 </div>
@@ -139,9 +112,9 @@
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
+                    <a class="btn btn-xl btn-outline-light" href="https://google.com">
                         <i class="fas fa-download me-2"></i>
-                        Free Download!
+                        Go back to Google!
                     </a>
                 </div>
             </div>
@@ -254,9 +227,9 @@
         <div class="copyright py-4 text-center text-white">
             <div class="container"><small>Copyright &copy; Your Website 2021</small></div>
         </div>
-        <!-- Photographs Modals-->
-        <!-- Photographs Modal 1-->
-        <div class="photographs-modal modal fade" id="photographsModal1" tabindex="-1" aria-labelledby="photographsModal1" aria-hidden="true">
+        <!-- Certificates Modals-->
+        <!-- Certificates Modal 1-->
+        <div class="certificates-modal modal fade" id="certificatesModal1" tabindex="-1" aria-labelledby="certificatesModal1" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
@@ -264,17 +237,17 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
-                                    <!-- Photographs Modal - Title-->
-                                    <h2 class="photographs-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                                    <!-- Certificates Modal - Title-->
+                                    <h2 class="certificates-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Photographs Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/photographs/cabin.png" alt="..." />
-                                    <!-- Photographs Modal - Text-->
+                                    <!-- Certificates Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/certificates/cabin.png" alt="..." />
+                                    <!-- Certificates Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
@@ -287,8 +260,8 @@
                 </div>
             </div>
         </div>
-        <!-- Photographs Modal 2-->
-        <div class="photographs-modal modal fade" id="photographsModal2" tabindex="-1" aria-labelledby="photographsModal2" aria-hidden="true">
+        <!-- Certificates Modal 2-->
+        <div class="certificates-modal modal fade" id="certificatesModal2" tabindex="-1" aria-labelledby="certificatesModal2" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
@@ -296,17 +269,17 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
-                                    <!-- Photographs Modal - Title-->
-                                    <h2 class="photographs-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
+                                    <!-- Certificates Modal - Title-->
+                                    <h2 class="certificates-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Photographs Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/photographs/cake.png" alt="..." />
-                                    <!-- Photographs Modal - Text-->
+                                    <!-- Certificates Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/certificates/cake.png" alt="..." />
+                                    <!-- Certificates Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
@@ -319,8 +292,8 @@
                 </div>
             </div>
         </div>
-        <!-- Photographs Modal 3-->
-        <div class="photographs-modal modal fade" id="photographsModal3" tabindex="-1" aria-labelledby="photographsModal3" aria-hidden="true">
+        <!-- Certificates Modal 3-->
+        <div class="certificates-modal modal fade" id="certificatesModal3" tabindex="-1" aria-labelledby="certificatesModal3" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
@@ -328,17 +301,17 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
-                                    <!-- Photographs Modal - Title-->
-                                    <h2 class="photographs-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
+                                    <!-- Certificates Modal - Title-->
+                                    <h2 class="certificates-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Photographs Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/photographs/circus.png" alt="..." />
-                                    <!-- Photographs Modal - Text-->
+                                    <!-- Certificates Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/certificates/circus.png" alt="..." />
+                                    <!-- Certificates Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
@@ -351,8 +324,8 @@
                 </div>
             </div>
         </div>
-        <!-- Photographs Modal 4-->
-        <div class="photographs-modal modal fade" id="photographsModal4" tabindex="-1" aria-labelledby="photographsModal4" aria-hidden="true">
+        <!-- Certificates Modal 4-->
+        <div class="certificates-modal modal fade" id="certificatesModal4" tabindex="-1" aria-labelledby="certificatesModal4" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
@@ -360,17 +333,17 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
-                                    <!-- Photographs Modal - Title-->
-                                    <h2 class="photographs-modal-title text-secondary text-uppercase mb-0">Controller</h2>
+                                    <!-- Certificates Modal - Title-->
+                                    <h2 class="certificates-modal-title text-secondary text-uppercase mb-0">Controller</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Photographs Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/photographs/game.png" alt="..." />
-                                    <!-- Photographs Modal - Text-->
+                                    <!-- Certificates Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/certificates/game.png" alt="..." />
+                                    <!-- Certificates Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
@@ -383,8 +356,8 @@
                 </div>
             </div>
         </div>
-        <!-- Photographs Modal 5-->
-        <div class="photographs-modal modal fade" id="photographsModal5" tabindex="-1" aria-labelledby="photographsModal5" aria-hidden="true">
+        <!-- Certificates Modal 5-->
+        <div class="certificates-modal modal fade" id="certificatesModal5" tabindex="-1" aria-labelledby="certificatesModal5" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
@@ -392,17 +365,17 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
-                                    <!-- Photographs Modal - Title-->
-                                    <h2 class="photographs-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
+                                    <!-- Certificates Modal - Title-->
+                                    <h2 class="certificates-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Photographs Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/photographs/safe.png" alt="..." />
-                                    <!-- Photographs Modal - Text-->
+                                    <!-- Certificates Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/certificates/safe.png" alt="..." />
+                                    <!-- Certificates Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
@@ -415,8 +388,8 @@
                 </div>
             </div>
         </div>
-        <!-- Photographs Modal 6-->
-        <div class="photographs-modal modal fade" id="photographsModal6" tabindex="-1" aria-labelledby="photographsModal6" aria-hidden="true">
+        <!-- Certificates Modal 6-->
+        <div class="certificates-modal modal fade" id="certificatesModal6" tabindex="-1" aria-labelledby="certificatesModal6" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
@@ -424,17 +397,17 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
-                                    <!-- Photographs Modal - Title-->
-                                    <h2 class="photographs-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
+                                    <!-- Certificates Modal - Title-->
+                                    <h2 class="certificates-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Photographs Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/photographs/submarine.png" alt="..." />
-                                    <!-- Photographs Modal - Text-->
+                                    <!-- Certificates Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/certificates/submarine.png" alt="..." />
+                                    <!-- Certificates Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
